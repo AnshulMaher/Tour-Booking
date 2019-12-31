@@ -4,6 +4,7 @@ const { isLoggedIn, protect } = require('../controllers/authController');
 const {
   getOverview,
   getTour,
+  getSignupForm,
   getLoginForm,
   getAccount,
   getMyTours,
@@ -14,6 +15,8 @@ const { createBookingCheckout } = require('../controllers/bookingController');
 const router = express.Router();
 
 router.get('/', isLoggedIn, getOverview);
+
+router.get('/signup', isLoggedIn, getSignupForm);
 
 router.get('/login', isLoggedIn, getLoginForm);
 
