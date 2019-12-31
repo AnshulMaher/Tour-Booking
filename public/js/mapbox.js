@@ -4,7 +4,6 @@ export const displayMap = locations => {
     'pk.eyJ1IjoiYW5zaHVsbWFoZXIiLCJhIjoiY2s0b3ZxY3c0MWk1ZzNkbDVha3U4Yjk3aSJ9.ELFTTEat2nb3uc1I_7aOew';
   const map = new mapboxgl.Map({
     container: 'map',
-    // style: 'mapbox://styles/anshulmaher/ck4owcs0t0yez1fjzx6xxypno',
     style: 'mapbox://styles/mapbox/light-v10',
     scrollZoom: false
   });
